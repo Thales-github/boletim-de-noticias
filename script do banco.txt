@@ -1,0 +1,32 @@
+create table quebradaNews_mensagens(
+
+msgCodigo int not null primary key auto_increment,
+msgNome varchar(40) not null,
+msgEmail varchar(80) not null,
+msgTelefone varchar(15) not null,
+msgMensagem text
+) ENGINE=InnoDB;
+
+create table quebradaNews_noticias(
+notCodigo int not null primary key auto_increment,
+notTitulo varchar(120) not null,
+notSubTitulo varchar(120) not null,
+notAutor varchar(20) not null,
+notDtPublicacao datetime default current_timestamp,
+notCategoria enum('Ciência','Esportes','Criminalidade','Economia','Desastres','Música','Política','Entretenimento','Mundo','Cultura','Fofocas','Televisão','Saúde e bem estar','Beleza','Alternativo','Humor','Gastronomia','História','Viagens','Tecnologia','Cultura geek','Educação') not null,
+notImagem varchar(256) not null,
+notConteudo text not null
+) ENGINE=InnoDB;
+/* -------------------------------------------------------------------------------------------- */
+/* na tabela usuários eu não coloquei criptografia na criação da tabela pois os usuários terão 
+seus dados criptografados pelo PHP antes de serem cadastrados*/
+/* -------------------------------------------------------------------------------------------- */
+
+create table quebradaNews_usuarios(
+usuNivel int not null primary key auto_increment,
+usuNivel int not null,
+usuEmail varchar(80) not null,
+usuSenha varchar(40) not null,
+usuLogin varchar(30) not null
+
+) ENGINE=InnoDB;

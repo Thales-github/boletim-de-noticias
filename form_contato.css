@@ -1,0 +1,37 @@
+    body{background-color: rgb(101, 82, 119);}
+
+    .titulo{margin: 0 0 30px 0;}
+
+    .navbar{background-color: black;}
+
+    .form-group{
+        background-color: rgb(121, 108, 133);
+        margin-top: 80px;
+        border: 5px solid grey;
+        border-radius: 10px;
+        padding: 20px;
+        color: white;
+    }
+    .form-group > input, textarea{
+        border: none;
+        outline: none;
+        background-color: rgb(121, 108, 133);
+    }
+    .form-group > input{
+        color: white;
+        border-bottom: 4px solid grey;
+        margin-bottom: 5px;
+    }
+    .form-group > textarea{
+        color: white;
+        border-bottom: 4px solid grey;
+        margin-bottom: 5px;
+    }
+
+    textarea::placeholder{color: white;}
+
+    input::placeholder{color: white;}
+
+    .form-group > input:focus{border-bottom: 4px solid rgb(159, 53, 208);}
+
+    .form-group > textarea:focus{border-bottom: 4px solid rgb(159, 53, 208);}
